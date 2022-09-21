@@ -44,17 +44,25 @@
 
     <h1>Programa</h1>
     <script>
+      //Funciones ---> inician con () y se dan los paramétros
+      /*uso como document.write, alert()*/
+      function saltarLinea()
+      {
+        //se escriben las instrucciones que se van a ejecutar en la función.
+        document.write("<br><br>");
+      }
+
       var anio = 2022; //se coloca var para definir una variable.
       var salto = "<br><br><br>";
 
       document.write ("Juan tiene: " + (anio-2000) + " Años");
-      document.write(salto);
+      saltarLinea(); //se ejecuta la función
       document.write ("Pedro tiene: " + (anio-1995) + " Años");
-      document.write(salto);
+      saltarLinea();
 
       anio = 2030; //ya no se define var, sólo se coloca la variable que se va a volver a definir.
       document.write ("Carlos tiene: " + (anio-2005) + " Años");
-      document.write("<br><br>");
+      saltarLinea();
 
       anio = 2020;
       document.write("Jimena tiene: " + (anio - 2010) + "años");
