@@ -1,0 +1,40 @@
+<meta charset="utf-8">
+
+<h1>Programa para calcular el IMC</h1>
+
+<script>
+  function saltarLinea()
+  {
+    //se escriben las instrucciones que se van a ejecutar en la función.
+    document.write("<br><br>");
+  }
+  function imprime(frase)
+  {
+    document.write(frase);
+    saltarLinea();
+  }
+
+  function Imc(peso, altura)
+  {
+    imc = peso / (altura * altura);
+    return(imc);
+  }
+  var peso = 71;
+  var altura = 1.72;
+  Imc(peso,altura);
+  imprime("El IMC es: " + imc);
+
+  peso = 49;
+  altura = 1.52;
+  imc2 = Imc(peso,altura);
+  imprime("El IMC es: " + imc2);
+
+//otra forma de ejecutar una función 
+    function Imc_2(peso1, altura1)
+    {
+      imc1 = peso1 / (altura1 * altura1);
+      imprime("El IMC es: " + imc1);
+    }
+    Imc_2(50, 1.60);
+    Imc_2(80, 1.80);
+</script>
