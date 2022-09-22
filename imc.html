@@ -63,4 +63,18 @@
     imprime("El promedio del IMC calculado de Diego y Oscar es: " + (CalImc(70, 1.60) + CalImc(80, 1.80))/2);
 
     //es mejor crear más funciones (objetivas) que realicen una sola acción y retornen un valor.
+
+
+    // Interacción con el usuario
+    function Cal_Imc(peso, altura)
+    {
+      return( peso / (altura *  altura));
+    }
+
+    var nombre = prompt("Informe su nombre")
+    var pesoin = prompt(nombre + ", informe su peso")
+    var altin = prompt(nombre + ", informe su altura")
+    var imcC = Cal_Imc(pesoin, altin)
+
+    imprime(nombre + ", su imc calculado es: " + imcC);
 </script>
