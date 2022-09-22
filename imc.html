@@ -37,4 +37,30 @@
     }
     Imc_2(70, 1.60, "Diego");
     Imc_2(80, 1.80, "Oscar");
+
+  //promedio de IMC
+    function Cimc(peso1, altura1, nombre1, peso2, altura2, nombre2)
+    {
+      imc1 = peso1 / (altura1 * altura1);
+      imc2 = peso2 / (altura2 * altura2);
+      imprime("El promedio del IMC de " + nombre1 + " y " + nombre2 + " es " + (imc1+imc2)/2);
+    }
+
+    Cimc(70, 1.60, "Diego", 80, 1.80, "Oscar");
+    Cimc(49, 1.52, "Kary", 55, 1.55, "Ana");
+
+  //uso de return
+    function CalImc(peso, altura)
+    {
+      imc = peso / (altura *  altura);
+      return imc;
+    }
+
+    var imcD = CalImc(70, 1.60);
+    var imcO = CalImc(80, 1.80);
+
+    imprime("El promedio del IMC calculado de Diego y Oscar es: " + (imcD + imcO)/2);
+    imprime("El promedio del IMC calculado de Diego y Oscar es: " + (CalImc(70, 1.60) + CalImc(80, 1.80))/2);
+
+    //es mejor crear más funciones (objetivas) que realicen una sola acción y retornen un valor.
 </script>
