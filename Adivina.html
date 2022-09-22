@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<h1>Programa para adivinar un número.</h1>
+<script>
+  function saltarLinea()
+  {
+    //se escriben las instrucciones que se van a ejecutar en la función.
+    document.write("<br><br>");
+  }
+  function imprime(frase)
+  {
+    document.write(frase);
+    saltarLinea();
+  }
+
+  var numPensado = Math.round(Math.random()*10); //colocar un número en aleatorio y redondear un número.
+  var numLanzado = parseInt(prompt("Ingresa un número entre 0 y 10."));
+
+  if (numPensado == numLanzado)
+    imprime("Usted acertó");
+  else{
+    imprime("Usted no acertó");
+    imprime("El número pensado era " + numPensado);
+  }
+
+</script>
