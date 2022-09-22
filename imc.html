@@ -77,4 +77,17 @@
     var imcC = Cal_Imc(pesoin, altin)
 
     imprime(nombre + ", su imc calculado es: " + imcC);
+
+    if (imcC < 18.5) {
+      imprime("Insuficiencia ponderal - abajo de lo recomendado.");
+    }
+    if (imcC >= 18.5 && imcC < 25) {
+      imprime("IMC: Intervalo normal.");
+    }
+    if (imcC >= 25 && imcC < 30) {
+      imprime("IMC: sobrepeso");
+    }
+    if (imcC >= 30) {
+      imprime("IMC: Obesidad");
+    }
 </script>
