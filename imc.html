@@ -29,12 +29,12 @@
   imc2 = Imc(peso,altura);
   imprime("El IMC es: " + imc2);
 
-//otra forma de ejecutar una función 
-    function Imc_2(peso1, altura1)
+//otra forma de ejecutar una función
+    function Imc_2(peso1, altura1, nombre)
     {
       imc1 = peso1 / (altura1 * altura1);
-      imprime("El IMC es: " + imc1);
+      imprime("El IMC de " + nombre + " es " + imc1);
     }
-    Imc_2(50, 1.60);
-    Imc_2(80, 1.80);
+    Imc_2(70, 1.60, "Diego");
+    Imc_2(80, 1.80, "Oscar");
 </script>
