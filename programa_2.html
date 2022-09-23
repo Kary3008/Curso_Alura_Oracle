@@ -4,41 +4,19 @@
 <script>
   //DOCUMENTACIÓN 2D: CANVAS:
   //https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D
-  function cuadradoVerde()
+  function cuadrado(x, y, color)
   {
     var pantalla = document.querySelector("canvas");
     var pincel = pantalla.getContext("2d"); //traer todo el contenido en pantalla
-    pincel.fillStyle = "yellow";
-    pincel.fillRect(0, 0, 50, 50);
+    pincel.fillStyle = color;
+    pincel.fillRect(x, y, 50, 50);
     pincel.strokeStyle = "black"; //hacer un borde
-    pincel.strokeRect(0, 0, 50, 50);
+    pincel.strokeRect(x, y, 50, 50);
+    //ya no es necesario agregar el color a menos que se cambie.
   }
 
-  cuadradoVerde();
-//fillStyle es una propiedad - característica
-  pincel.fillStyle = "lightgray";
-  /*Posiciones del fillRect ---- rectangulo
-    (eje x, eje y, horizontal, vertical)
-  */
-  pincel.fillRect(0, 0, 600, 400);
-
-  pincel.fillStyle = "green";
-  pincel.fillRect(0, 0, 50, 50);
-  pincel.strokeStyle = "black"; //hacer un borde
-  pincel.strokeRect(0, 0, 50, 50);
-  //ya no es necesario agregar el color a menos que se cambie.
-  pincel.fillRect(50, 0, 50, 50);
-  pincel.strokeRect(50, 0, 50, 50);
-
-  pincel.fillRect(100, 0, 50, 50);
-  pincel.strokeRect(100, 0, 50, 50);
-
-  pincel.fillRect(150, 0, 50, 50);
-  pincel.strokeRect(150, 0, 50, 50);
-
-  pincel.fillRect(200, 0, 50, 50);
-  pincel.strokeRect(200, 0, 50, 50);
-
-
+  cuadrado(0,0, "red");
+  cuadrado(50,0, "yellow");
+  cuadrado(100,0, "green");
 
 </script>
