@@ -14,9 +14,21 @@
     pincel.strokeRect(x, y, 50, 50);
     //ya no es necesario agregar el color a menos que se cambie.
   }
-
-  cuadrado(0,0, "red");
+  /*var x = 0;
+  while (x < 600) {
+    cuadrado(x, 0, "brown");
+    cuadrado(x, 50, "purple");
+    cuadrado(x, 100, "blue");
+    x = x + 50;
+  }*/
+  /*cuadrado(0,0, "red");
   cuadrado(50,0, "yellow");
-  cuadrado(100,0, "green");
+  cuadrado(100,0, "green");*/
+  for(var x = 0; x < 600; x = x + 50)
+  {
+    cuadrado(x, 0, "brown");
+    cuadrado(x, 50, "purple");
+    cuadrado(x, 100, "blue");
+  }
 
 </script>
