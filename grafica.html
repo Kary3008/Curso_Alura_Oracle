@@ -1,0 +1,86 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    function dibujarRectangulo(x, y, base, altura, color) {
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+        pincel.fillStyle=color;
+        pincel.fillRect(x,y, base, altura);
+        pincel.strokeStyle="black";
+        pincel.strokeRect(x,y, base, altura);
+    }
+
+    function escribirTexto(x , y, texto) {
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+        pincel.font="15px Georgia";
+        pincel.fillStyle="black";
+        pincel.fillText(texto, x, y);
+    }
+
+    dibujarRectangulo(50, 50, 50, 100, "pink");
+    escribirTexto(130, 250, "Kary");
+
+    /*La primer barra comienza en X=50 y Y=50, y recibe
+    la serie del 2009, los colores y el texto 2009.
+    Dentro de esa función necesitas implementar un Loop (ciclo for o while) y
+    acumular el valor de la serie que sería la altura de cada rectángulo
+    de nuestra barra.
+    cada array representa un % */
+    var serie2009 = [6, 47, 41, 3, 3]; //altura
+    var serie2019 = [81, 9, 3, 3, 4]; // altura
+    var colores = ["blue","green","yellow", "red","gray"];
+
+    function dibujarBarra(x, y, serie, colores, texto) {
+      escribirTexto(x, y - 10, texto); //2009 o 2019
+      //acumular la altura
+      var inAlt = 0;
+      for(var i = 0; i < serie.length; i++)
+      {
+        var altura = serie[i]; //la altura va a ser igual que cada elemento del array
+                        // x, y ,      base , altura, color
+        dibujarRectangulo(x, y + inAlt, 50, altura, colores[i]);
+        inAlt = inAlt + altura;
+
+        /* PRUEBA DE ESCRITORIO
+         inAlt = 0
+            i = 0; 0 < 4
+            altura = 6
+            (50, 50 + 0, 50, 6, blue)
+            inAlt = inAlt + 6 ---> 6
+
+        inAlt = 6
+            i = 1; 1 < 4
+            altura = 47
+            (50, 50 + 6, 50, 47, green)
+            inAlt = 6 + 47 ---> 53
+
+        inAlt = 53
+            i = 2; 2 < 4
+            altura = 41
+            (50, 50 + 53, 50, 41, yellow)
+            inAlt = 53 + 41 ---> 94
+
+        inAlt = 94
+            i = 3; 3 < 4
+            altura = 3
+            (50, 50 + 94, 50, 3, red)
+            inAlt = 94 + 3 ---> 97
+
+        inAlt = 97
+            i = 4; 4 < 4
+            altura = 3
+            (50, 50 + 97, 50, 3, red)
+            inAlt = 97 + 3 ---> 100
+
+        */
+      }
+    }
+    dibujarBarra(50, 50, serie2009, colores, "2009");
+    dibujarBarra(150, 50, serie2019, colores, "2019");
+
+
+</script>
