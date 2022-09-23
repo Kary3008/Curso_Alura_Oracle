@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<h1>Programa para los números pares del 1 al 100</h1>
+<script>
+  function saltarLinea()
+  {
+    //se escriben las instrucciones que se van a ejecutar en la función.
+    document.write("<br><br>");
+  }
+  function imprime(frase)
+  {
+    document.write(frase);
+    saltarLinea();
+  }
+
+  var cont = 2;
+
+  while (cont <= 100)
+  {
+    imprime(cont);
+    cont = cont + 2;
+  }
+</script>
