@@ -12,7 +12,7 @@
     saltarLinea();
   }
 
-  var numPensado = Math.round(Math.random()*10); //colocar un número en aleatorio y redondear un número.
+/*  var numPensado = Math.round(Math.random()*10); //colocar un número en aleatorio y redondear un número.
   var numLanzado = parseInt(prompt("Ingresa un número entre 0 y 10."));
 
   if (numPensado == numLanzado)
@@ -21,5 +21,36 @@
     imprime("Usted no acertó");
     imprime("El número pensado era " + numPensado);
   }
+*/
+
+ //HACER QUE SEAN 3 INTENTOS
+   var numPensado = Math.round(Math.random()*10);
+   var intento = 3;
+   var cont = 1;
+
+   while (cont <= intento) {
+     var numLanzado = parseInt(prompt("Ingresa un número entre 0 y 10."));
+
+     if (numPensado == numLanzado)
+     {
+       alert("Usted acertó, en el intento " + cont + " el numero pensado era " + numPensado);
+       break;
+     }
+     else
+     {
+       alert("Usted no acertó");
+       //alert("El número pensado era " + numPensado);
+     }
+     cont++;
+   }
+
+   if (numPensado == numLanzado)
+   {
+      imprime("Usted acertó, en el intento " + cont + " el numero pensado era " + numPensado);
+   }
+   else
+   {
+      imprime("Usted no acertó, el número pensado era " + numPensado);
+   }
 
 </script>
