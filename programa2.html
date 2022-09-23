@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<canvas id="canvas" width="600" height="400"></canvas>
+
+<script>
+  var pantalla = document.querySelector("canvas");
+  var pincel = pantalla.getContext("2d"); //traer todo el contenido en pantalla
+
+//fillStyle es una propiedad - característica
+  pincel.fillStyle = "lightgray";
+  /*Posiciones del fillRect ---- rectangulo
+    (eje x, eje y, horizontal, vertical)
+  */
+  pincel.fillRect(0, 0, 600, 400);
+
+//partir el rectangulo
+  pincel.fillStyle = "pink"; //propiedad
+  pincel.fillRect(0, 0, 200, 400); //funcion
+
+  pincel.fillStyle = "purple";
+  pincel.fillRect(400, 0, 200, 400);
+
+
+</script>
