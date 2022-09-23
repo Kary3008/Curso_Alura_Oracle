@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<h1>Estrellas.</h1>
+<script>
+  function saltarLinea()
+  {
+    //se escriben las instrucciones que se van a ejecutar en la función.
+    document.write("<br><br>");
+  }
+  function imprime(frase)
+  {
+    document.write(frase);
+    saltarLinea();
+  }
+
+  for (var lineas = 1; lineas <=  5; lineas++)
+  {
+    imprime("*");
+  }
+
+  saltarLinea();
+  
+  for (var lineas = 1; lineas <=  5; lineas++)
+  {
+    for(var col = 1; col <= 10; col++)
+    {
+    document.write("*");
+    }
+    saltarLinea();
+  }
+</script>
