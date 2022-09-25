@@ -1,0 +1,15 @@
+p /*etiqueta parrafo*/
+{
+  text-align: center; /*alinear texto*/
+  background: #ccc;
+}
+
+body /*todo el contenido dentro de body*/
+{
+  background: #ccc; /*color de fondo*/
+}
+
+em strong /*dale la propiedad a los que tienen las etiquetas em y strong*/
+{
+  color: red;/*texto*/
+}
