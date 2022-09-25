@@ -1,0 +1,67 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+    pincel.fillStyle = "pink";
+    pincel.fillRect(0,0,600,400);
+    var radio = 10;
+    var xAleatorio;
+    var yAleatorio;
+
+    //diseñar circunferencia
+    function diseniarC(x, y, radio, color)
+    {
+        pincel.fillStyle = color;
+        pincel.beginPath(); //pasar luego las coordenadas
+        pincel.arc(x, y, radio, 0, 2*Math.PI);/*5 parámetros, coordenadas horizontal y vertical
+        radio, tamaño de la circunferencia, angulo inicial y ángulo final
+        de la circunferencia----------- Math.PI es para definir el valor de PI (3.1415....)*/
+        pincel.fill();
+    }
+
+    function limpiarPant()
+    {
+        pincel.clearRect(0,0,600,400);//limpia la pantalla
+    }
+
+    var x = 0;
+
+    function diseniarObjetivo(x, y)
+    {
+      diseniarC(x, y, radio + 20, "red");
+      diseniarC(x, y, radio + 10, "white");
+      diseniarC(x, y, radio, "red");
+    }
+
+    function sortearPos(maximo)
+    {
+      return Math.floor(Math.random()*maximo);
+    }
+    function actualizarPant()
+    {
+      limpiarPant();
+      xAleatorio = sortearPos(600);
+      yAleatorio = sortearPos(400);
+      diseniarObjetivo(xAleatorio, yAleatorio);
+      //diseniarC(x,20,10);
+      x++;
+    }
+    setInterval(actualizarPant,2000); //llamar la funcion, milisegundos
+
+    function disparar(evento)
+    {
+      //lógica del clic
+      var x = evento.pageX - pantalla.offsetLeft; //quito la línea de la izq
+      var y = evento.pageY - pantalla.offsetTop; // para tener una posición correcta.
+
+      //capturo la posicion, comparando con la superficie
+      if ((x < xAleatorio + radio) && (x > xAleatorio - radio) && (y < yAleatorio + radio) && (y > yAleatorio - radio))
+      {
+          alert("Tiro Certero");
+      }
+    }
+
+    pantalla.onclick = disparar;
+    //actualizarPant();
+</script>
