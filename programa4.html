@@ -22,9 +22,20 @@
         pincel.clearRect(0,0,600,400);//limpia la pantalla
     }
 
-    for (var x = 20; x < 600; x++)
+    var x = 0;
+    function actualizarPant()
     {
-        diseniarC(x , 20, 10);
+      limpiarPant();
+      diseniarC(x,20,10);
+      x++;
     }
 
+    /*function exhibirMensaje()
+    {
+      console.log("mostrarMensaje");
+    }
+
+    setInterval(exhibirMensaje,5000); //a cada segundo se muestra el mensaje   */
+    
+    setInterval(actualizarPant,10); //llamar la funcion, milisegundos
 </script>
