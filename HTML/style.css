@@ -1,3 +1,15 @@
+/* COLORES HEXADECIMALES
+  0 1 2 3 4 5 6 7 8 9 A B C D E
+  #000000 --- negro
+  #FFFFFF --- blanco
+
+   COLORES RGB
+   r r g g b b
+   0 = menor
+   255 = max
+   rgb(0,0,0)
+*/
+
 p /*etiqueta parrafo*/
 {
   text-align: center; /*alinear texto*/
