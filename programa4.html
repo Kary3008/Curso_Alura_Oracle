@@ -1,0 +1,30 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+    pincel.fillStyle = "pink";
+    pincel.fillRect(0,0,600,400);
+
+    //diseñar circunferencia
+    function diseniarC(x, y, radio)
+    {
+        pincel.fillStyle = "purple";
+        pincel.beginPath(); //pasar luego las coordenadas
+        pincel.arc(x, y, radio, 0, 2*Math.PI);/*5 parámetros, coordenadas horizontal y vertical
+        radio, tamaño de la circunferencia, angulo inicial y ángulo final
+        de la circunferencia----------- Math.PI es para definir el valor de PI (3.1415....)*/
+        pincel.fill();
+    }
+
+    function limpiarPant()
+    {
+        pincel.clearRect(0,0,600,400);//limpia la pantalla
+    }
+
+    for (var x = 20; x < 600; x++)
+    {
+        diseniarC(x , 20, 10);
+    }
+
+</script>
