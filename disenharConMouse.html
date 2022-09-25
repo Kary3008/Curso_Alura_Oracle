@@ -1,0 +1,43 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var pantalla = document.querySelector('canvas');
+    var pincel = pantalla.getContext('2d');
+
+    pincel.fillStyle = 'grey';
+    pincel.fillRect(0, 0, 600, 400);
+
+    var puedoDibujar = false; //inicializa en false
+
+    function dibujarCirculo(evento) { //diseñar o no.
+
+        if(puedoDibujar) {
+            var x = evento.pageX - pantalla.offsetLeft;
+            var y = evento.pageY - pantalla.offsetTop;
+            pincel.fillStyle = 'blue';
+            pincel.beginPath();
+            pincel.arc(x, y, 5, 0, 2 * 3.14);
+            pincel.fill();
+        }
+
+    }
+
+    //onmousemove permite capturar el movimiento del mouse.
+    pantalla.onmousemove = dibujarCirculo;
+
+    function habilitarDibujar() {
+
+        puedoDibujar = true;
+    }
+
+    function deshabilitarDibujar() {
+
+        puedoDibujar = false;
+    }
+
+    //onmousedown ejecuta un código cuando está presionado.
+    pantalla.onmousedown = habilitarDibujar;
+    //onmouseup -- cuando el botón de mouse es soltado
+    pantalla.onmouseup = deshabilitarDibujar;
+
+</script>
