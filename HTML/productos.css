@@ -1,0 +1,19 @@
+header
+{
+  background-color: #bbb;
+}
+
+nav li /*la propiedad se cambia en li*/
+{
+  display: inline; /*no quiero que ocupe el 100% de la página, sino de su contenido*/
+  margin: 0 0 0 15px; /*espaciamiento hacia arriba, derecha, abajo, izquierda*/
+}
+
+nav a /*nos referimos en la parte de a en nav*/
+{
+    text-transform: uppercase;/*mayúsculas*/
+    color: #000;
+    font-weight: bold; /*strong -- negritas*/
+    font-size: 22px;
+    text-decoration: none;
+}
