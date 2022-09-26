@@ -35,6 +35,12 @@ nav a /*nos referimos en la parte de a en nav*/
     text-decoration: none;
 }
 
+nav a:hover /*mov del mouse*/
+{
+  color: #C78C19;
+  text-decoration: underline;
+}
+
 .productos
 {
   width: 940px;
@@ -53,12 +59,34 @@ nav a /*nos referimos en la parte de a en nav*/
   padding: 30px 20px;
   box-sizing: border-box; /*el borde será el limite del espacio que
    será definido en el espacio interno*/
+  border: 2px solid #000; /*entre el padding y el margin*/
+  /* simplificar borde
+  border-color: #000;
+  border-width: 2px;
+  border-style: solid; /*punteado, sólido, dolled*/
+  /*border-top-width: 10px; /*borde superior*/
+  border-radius: 15px;
+}
+
+.productos li:hover
+{
+  border-color: #C78C19;
+}
+
+.productos li:active
+{
+  border-color: #088C19;
 }
 
 .productos h2
 {
   font-size: 30px;
   font-weight: bold;
+}
+
+.productos li:hover h2
+{
+  font-size: 33px;
 }
 
 .descripcion
