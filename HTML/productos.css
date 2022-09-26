@@ -1,6 +1,23 @@
 header
 {
   background-color: #bbb;
+  padding: 20px 0;
+}
+
+.caja
+{
+  width: 940px;
+  position: relative;
+  margin: 0 auto; /*automatico en los bordes*/
+}
+
+/*posicion relative: puede mover su posicionamiento con su punto inicial fijo
+posicion absolute: puede posicionar mi elemento en cualquier lugar de la página*/
+nav
+{
+  position: absolute;
+  top: 110px;
+  right: 0;
 }
 
 nav li /*la propiedad se cambia en li*/
