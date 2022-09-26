@@ -1,0 +1,75 @@
+/* COLORES HEXADECIMALES
+  0 1 2 3 4 5 6 7 8 9 A B C D E
+  #000000 --- negro
+  #FFFFFF --- blanco
+
+   COLORES RGB
+   r r g g b b
+   0 = menor
+   255 = max
+   rgb(0,0,0)
+*/
+
+p /*etiqueta parrafo*/
+{
+  text-align: center; /*alinear texto*/
+  background: #ccc;
+}
+
+#banner
+{
+  width: 100%;
+}
+
+.T_principal
+{
+  padding-left: 30px;
+}
+
+.principal
+{
+  background-color: #ccc;
+  padding: 20px;
+}
+
+.titulo
+{
+  text-align: center;
+  /*height: 150px;
+  /*border: 10px solid #000;
+  /*padding: 20px; /*espacios internos generales.*/
+  /*margin: 40px; /*espacio externo general*/
+}
+
+em strong /*dale la propiedad a los que tienen las etiquetas em y strong*/
+{
+  color: red;/*texto*/
+}
+
+#mision /*selector de ID*/
+{
+  font-size: 20px;
+}
+
+.diferenciales
+{
+  background: #fff;
+  padding: 30px;
+}
+
+.items
+{
+  font-style: italic;
+}
+
+ul{
+  display: inline-block; /*solo uses el espaciamiento del contenido*/
+  vertical-align: top;
+  width: 20%;
+  margin-right: 15%;
+}
+
+.imgDiferencial
+{
+  width: 50%;
+}

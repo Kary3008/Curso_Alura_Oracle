@@ -1,75 +1,161 @@
-/* COLORES HEXADECIMALES
-  0 1 2 3 4 5 6 7 8 9 A B C D E
-  #000000 --- negro
-  #FFFFFF --- blanco
-
-   COLORES RGB
-   r r g g b b
-   0 = menor
-   255 = max
-   rgb(0,0,0)
+/*PRIORIDAD DE ESTILOS EN CSS
+  INLINE --> 1000
+  ID --> 100
+  CLASS --> 10
+  ETIQUETA --> 1
 */
 
-p /*etiqueta parrafo*/
+header
 {
-  text-align: center; /*alinear texto*/
-  background: #ccc;
+  background-color: #bbb;
+  padding: 20px 0;
 }
 
-#banner
+.caja
 {
-  width: 100%;
+  width: 940px;
+  position: relative;
+  margin: 0 auto; /*automatico en los bordes*/
 }
 
-.T_principal
+/*posicion relative: puede mover su posicionamiento con su punto inicial fijo
+posicion absolute: puede posicionar mi elemento en cualquier lugar de la página*/
+nav
 {
-  padding-left: 30px;
+  position: absolute;
+  top: 110px;
+  right: 0;
 }
 
-.principal
+nav li /*la propiedad se cambia en li*/
 {
-  background-color: #ccc;
-  padding: 20px;
+  display: inline; /*no quiero que ocupe el 100% de la página, sino de su contenido*/
+  margin: 0 0 0 15px; /*espaciamiento hacia arriba, derecha, abajo, izquierda*/
 }
 
-.titulo
+nav a /*nos referimos en la parte de a en nav*/
 {
+    text-transform: uppercase;/*mayúsculas*/
+    color: #000;
+    font-weight: bold; /*strong -- negritas*/
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover /*mov del mouse*/
+{
+  color: #C78C19;
+  text-decoration: underline;
+}
+
+.productos
+{
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.productos li
+{
+  display: inline-block; /**puede ser ajustado tanto en largo como en la altura*/
   text-align: center;
-  /*height: 150px;
-  /*border: 10px solid #000;
-  /*padding: 20px; /*espacios internos generales.*/
-  /*margin: 40px; /*espacio externo general*/
+  width: 30%;
+  vertical-align: top;
+  /*background: #ccc;*/
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box; /*el borde será el limite del espacio que
+   será definido en el espacio interno*/
+  border: 2px solid #000; /*entre el padding y el margin*/
+  /* simplificar borde
+  border-color: #000;
+  border-width: 2px;
+  border-style: solid; /*punteado, sólido, dolled*/
+  /*border-top-width: 10px; /*borde superior*/
+  border-radius: 15px;
 }
 
-em strong /*dale la propiedad a los que tienen las etiquetas em y strong*/
+.productos li:hover
 {
-  color: red;/*texto*/
+  border-color: #C78C19;
 }
 
-#mision /*selector de ID*/
+.productos li:active
+{
+  border-color: #088C19;
+}
+
+.productos h2
+{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.productos li:hover h2
+{
+  font-size: 33px;
+}
+
+.descripcion
+{
+  font-size: 18px;
+}
+
+.precio
 {
   font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
-.diferenciales
+footer
 {
-  background: #fff;
-  padding: 30px;
+  text-align: center;
+  background: url(imagenes/bg.jpg);
+  padding: 40px;
 }
 
-.items
+.cr
 {
-  font-style: italic;
+  color: #fff;
+  font-size: 13px;
+  margin: 20px;
 }
 
-ul{
-  display: inline-block; /*solo uses el espaciamiento del contenido*/
-  vertical-align: top;
-  width: 20%;
-  margin-right: 15%;
+main{
+  width: 940px;
+  margin: 0 auto;
 }
 
-.imgDiferencial
+ form
+ {
+   margin: 40px 0;
+ }
+
+form label, form p
 {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+form input
+{
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
   width: 50%;
+}
+
+.input-padron
+{
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px; /*espacio entre el contenido y el borde*/
+  width: 50%;
+}
+
+.checkbox
+{
+  margin: 20px 0;
 }
