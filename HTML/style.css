@@ -21,7 +21,26 @@ body /*todo el contenido dentro de body*/
   background: #ccc; /*color de fondo*/
 }
 
+#banner
+{
+  width: 100%;
+}
+
+h1
+{
+  text-align: center;
+  height: 150px;
+  border: 10px solid #000;
+  padding: 20px; /*espacios internos generales.*/
+  margin: 40px; /*espacio externo general*/
+}
+
 em strong /*dale la propiedad a los que tienen las etiquetas em y strong*/
 {
   color: red;/*texto*/
+}
+
+#mision /*selector de ID*/
+{
+  font-size: 20px;
 }
