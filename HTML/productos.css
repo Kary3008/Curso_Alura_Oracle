@@ -34,3 +34,41 @@ nav a /*nos referimos en la parte de a en nav*/
     font-size: 22px;
     text-decoration: none;
 }
+
+.productos
+{
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.productos li
+{
+  display: inline-block; /**puede ser ajustado tanto en largo como en la altura*/
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  /*background: #ccc;*/
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box; /*el borde será el limite del espacio que
+   será definido en el espacio interno*/
+}
+
+.productos h2
+{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.descripcion
+{
+  font-size: 18px;
+}
+
+.precio
+{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
