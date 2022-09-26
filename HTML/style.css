@@ -16,11 +16,14 @@ p /*etiqueta parrafo*/
   background: #ccc;
 }
 
-
-
 #banner
 {
   width: 100%;
+}
+
+.T_principal
+{
+  padding-left: 30px;
 }
 
 .principal
@@ -29,7 +32,7 @@ p /*etiqueta parrafo*/
   padding: 20px;
 }
 
-h1, h2
+.titulo
 {
   text-align: center;
   /*height: 150px;
