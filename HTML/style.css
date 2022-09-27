@@ -197,3 +197,36 @@ td, th
   border: 1px solid #000;
   padding: 8px 15px;;
 }
+
+/*estilos para index*/
+.banner
+{
+  width: 100%;
+}
+
+.titulo
+{
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+}
+
+.principal p
+{
+  0 0 1em;
+}
+
+.principal strong
+{
+  font-weight: bold;
+}
+
+.principal em
+{
+  font-style: italic;
+}
+
+.imgDiferencial
+{
+  width: 60%;
+}

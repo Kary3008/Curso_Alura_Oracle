@@ -2,38 +2,58 @@
 <html lang="es" dir="ltr"> <!--Indica el lenguaje (es - español) --->
   <head>
     <meta charset="utf-8"> <!--reconocer los caracteres especiales.-->
-    <link rel="stylesheet" href="styleHome.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <title>Barbería Alura</title>
   </head>
   <body> <!--Usar CSS con style-->
-    <header class="T_principal"> <!--Encabezado de la página-->
-      <h1>Barbería Alura<h1>
-    </header>
-
-    <img id="banner" src="banner.jpg">
-
-    <div class="principal">
-      <h2 class="titulo">Sobre la Barbería Alura</h2>
-      <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado
-      lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura
-      ya es destaque en la ciudad y conquista nuevos clientes diariamente. </p>
-      <!---EM marcación de énfasis(itálico)-->
-      <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em></p>
-
-      <p>Ofrecemos profesionales experimentados que están constantemente observando los
-      cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes
-      las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad,
-      garantizando calidad y satisfacción de nuestros clientes. </p>
-    </div>
-    <div class="diferenciales">
-      <h3 class="titulo">Diferenciales</h3>
-          <ul> <!---Listas no ordenadas-->
-            <li class="items">Atención personalizada a los clientes</li>
-            <li class="items">Espacio diferenciado</li>
-            <li class="items">Localización</li>
-            <li class="items">Profesionales calificados</li>
+    <!--Encabezado de la página-->
+    <header>
+      <div class="caja">
+        <h1><img src="imagenes/logo.png" alt="Logo"></h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
           </ul>
-          <img src="diferenciales.jpg" class="imgDiferencial">
-    </div>
+        </nav>
+      </div>
+    </header>
+    <!--Termina encabezado--->
+
+    <img class="banner" src="banner.jpg">
+    <main>
+          <section class="principal"> <!--section cuando el bloque sea semántico, donde tiene el mismo significado/ sentido-->
+            <h2 class="titulo">Sobre la Barbería Alura</h2>
+            <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado
+            lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura
+            ya es destaque en la ciudad y conquista nuevos clientes diariamente. </p>
+            <!---EM marcación de énfasis(itálico)-->
+            <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em></p>
+
+            <p>Ofrecemos profesionales experimentados que están constantemente observando los
+            cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes
+            las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad,
+            garantizando calidad y satisfacción de nuestros clientes. </p>
+          </section>
+          <section class="diferenciales">
+            <h3 class="titulo">Diferenciales</h3>
+                <ul> <!---Listas no ordenadas-->
+                  <li class="items">Atención personalizada a los clientes</li>
+                  <li class="items">Espacio diferenciado</li>
+                  <li class="items">Localización</li>
+                  <li class="items">Profesionales calificados</li>
+                </ul>
+                <img src="diferenciales.jpg" class="imgDiferencial">
+          </section>
+    </main>
+
+    <footer>
+      <!---Empieza pie de página.--->
+      <img src="imagenes/logo-blanco.png" alt="">
+      <!--unicode.table.com -Simbolos y códigos-->
+      <p class="cr">&copy Copyright Barbería Alura - 2022</p>
+    </footer>
   </body>
 </html>
