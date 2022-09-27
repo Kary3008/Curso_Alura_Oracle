@@ -26,6 +26,7 @@
     <main>
           <section class="principal"> <!--section cuando el bloque sea semántico, donde tiene el mismo significado/ sentido-->
             <h2 class="titulo">Sobre la Barbería Alura</h2>
+            <img src="imagenes/utensilios[1].jpg" alt="Utensilios de un barbero" class="utensilios">
             <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado
             lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura
             ya es destaque en la ciudad y conquista nuevos clientes diariamente. </p>
@@ -37,16 +38,35 @@
             las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad,
             garantizando calidad y satisfacción de nuestros clientes. </p>
           </section>
+          <!---Inicia mapa--->
+          <section class="mapa">
+              <h3 class="titulo">Nuestra Ubicación</h3>
+              <p>Nuestro establecimiento está ubicado en el corazón de la ciudad.</p>
+              <!---Iframe: etiqueta para crear ventana, gráfico, visual // elementos externo-->
+              <div class="content-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4499786293154!2d-46.636553717984036!3d-23.58818982673927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Education%20and%20Innovation!5e0!3m2!1ses!2smx!4v1664312145237!5m2!1ses!2smx"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </section>
+          <!---Termina mapa--->
           <section class="diferenciales">
             <h3 class="titulo">Diferenciales</h3>
-                <ul> <!---Listas no ordenadas-->
+              <div class="contenido">
+                <ul class="lista-diferenciales"> <!---Listas no ordenadas-->
                   <li class="items">Atención personalizada a los clientes</li>
                   <li class="items">Espacio diferenciado</li>
                   <li class="items">Localización</li>
                   <li class="items">Profesionales calificados</li>
-                </ul>
-                <img src="diferenciales.jpg" class="imgDiferencial">
+                  <li class="items">Puntualidad</li>
+                  <li class="items">Limpieza</li>
+                </ul><img src="diferenciales.jpg" class="imgDiferencial">
+              </div>
           </section>
+          <!--empieza video--->
+          <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <!---termina vídeo-->
     </main>
 
     <footer>
