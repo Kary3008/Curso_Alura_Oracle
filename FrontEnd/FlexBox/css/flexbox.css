@@ -1,6 +1,13 @@
 /*Documentación de Flexbox
 css.tricks.com/snippets/css/a-guide-to-flexbox/
 
+flex container: justify-content, align-items, flex-direction, flex-wrap, display: flex,
+flex items:
+order, flex-grow, flex-shrink
+
+flex: flex-grow, flex-shrink, flex-basis
+flex-flow: flex-direction flex-wrap
+
 encabezado*/
 .headerPrincipal .container
 {
@@ -117,7 +124,9 @@ encabezado*/
     }
     .headerPrincipal-nav-link-app
     {
-      order: -1;
+      order: -1;/*Para ello debemos utilizar la propiedad order en nuestro
+      flex ítem. Podemos utilizar cualquier valor menor que 0 para que
+      nuestro flex ítem sea el primero.*/
     }
     .videoSobre .container
     {
