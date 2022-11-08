@@ -1,25 +1,48 @@
 .app {
     background: #f1f1f1;
-    font-family: Arial, Helvetica, sans-serif;
     display: grid;
+    font-family: Arial, Helvetica, sans-serif;
     grid-template-areas:
-    "encabezado"
-    "contenido"
-    "footer";
+      "header"
+      "contenido"
+      "footer";
     grid-template-columns: auto;
-    grid-auto-rows: 50px 100vh auto; /*100vh definir pantalla completa*/
+    grid-template-rows: 50px auto auto; /*100vh definir pantalla completa*/
 }
 
-.encabezado {
-  /*background: #00cc99;*/
-  grid-area: encabezado;
+.encabezado
+{
+  align-items: center;
+  display: flex;
+  grid-area: header;
+  padding: 0 2rem;
+  background: #f1f1f1;
 }
+
+.menu__link
+{
+  color: #333;
+  padding: .5rem 1rem;
+}
+
+.menu__link:hover, .menu__link:active
+{
+  border-bottom: 2px solid #0073e6;
+}
+/*.encabezado {
+  /*background: #00cc99;
+  grid-area: encabezado;
+}*/
 .contenido {
   /*background: #ff8080;*/
   grid-area: contenido;
+  padding: 0 2rem;
 }
 
 .rodapie {
-  /*background: #0099ff;*/
+  background: #fdfdfd;
+  color: #333;
   grid-area: footer;
+  padding: 1rem;
+  text-align: center;
 }
