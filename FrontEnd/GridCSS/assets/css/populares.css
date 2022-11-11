@@ -1,6 +1,14 @@
 .populares
 {
-  padding: 3rem 2rem;
+  padding: 3rem 0;
+}
+
+.populares__contenido
+{
+  display: flex;
+  flex-wrap: wrap;
+  /*grid-area: contenido;*/
+  padding: 1rem 0rem;
 }
 
 .populares__card
@@ -8,12 +16,17 @@
   background: #fdfdfd;
   display: grid;
   grid-template-areas:
-  "card-imagen"
-  "card-base";
+    "card-imagen"
+    "card-base";
   grid-template-columns: 100%;
   grid-template-rows: 173px auto;
   margin-right: 1rem;
   width: calc(20% - 1rem);
+}
+
+.populares__card:last-child
+{
+  margin-right: 0;
 }
 
 .populares__card___imagen
@@ -40,14 +53,6 @@
   display: flex;
   flex-wrap: wrap;
   grid-area: card-descripcion;
-  padding: 1rem 0rem;
-}
-
-.populares__contenido
-{
-  display: flex;
-  flex-wrap: wrap;
-  grid-area: contenido;
   padding: 1rem 0rem;
 }
 
@@ -93,9 +98,4 @@
   background: transparent;
   border none;
   color: #333;
-}
-
-.populares__card:last-child
-{
-  margin-right: 0;
 }
