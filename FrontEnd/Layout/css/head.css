@@ -41,3 +41,13 @@ SVG -> imagenes vectoriales en dos dimensiones, más leve, tam: 4.26 KB
     margin-bottom: .7rem;
     margin-left: .7rem;
 }
+
+@media screen and (min-width: 1024px)
+{
+  .head
+  {
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+  }
+}

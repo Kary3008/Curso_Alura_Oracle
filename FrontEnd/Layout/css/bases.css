@@ -60,9 +60,6 @@ body
         padding-left: calc((100% - 940px)/2);
         padding-right: calc((100% - 940px)/2);
     }
-}
-
-@media screen and (min-width: 1024px) {
     .head {
         flex-direction: row;
         justify-content: space-between;
