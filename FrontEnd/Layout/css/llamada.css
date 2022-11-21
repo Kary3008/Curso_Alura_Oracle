@@ -5,10 +5,15 @@
 
     color: #FFFFFF;
     text-align: center;
-    
+
     background-color: #00161C;
 
-    padding-top: 12.25rem;
+/*REM es una unidad relativa a la propiedad font-size de la etiqueta
+, por lo tanto si la etiqueta tiene 16px de font-size 1 REM equivale
+a 16px. EM es relativa a la propiedad font-size de la etiqueta madre,
+por lo tanto, si la etiqueta madre es un font-size de 16px, 1 EM
+equivale a 16px.*/
+    padding-top: 12.25rem;/*rem se adapta automáticamente a tamaños y espacios*/
     padding-bottom: 2.5rem;
 }
 
