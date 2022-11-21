@@ -9,18 +9,31 @@ Bloque, bloque__elemento, bloque(guión guión)elemento bloque__elemento(-)-modi
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Fruta & Fruto</title>
-        <link href="./assets/css/normalize.css" rel="stylesheet" />
-        <link href="./assets/css/reset.css" rel="stylesheet" />
-        <link href="./assets/css/cabecera.css" rel="stylesheet" />
-        <link href="./assets/css/menu/menu-iten.css" rel="stylesheet" />
-        <link href="./assets/css/menu/menu-lista.css" rel="stylesheet" />
-        <link href="./assets/css/menu/menu-link.css" rel="stylesheet" />
-        <link href="./assets/css/banner/banner.css" rel="stylesheet" />
-        <link href="./assets/css/banner/banner-titulo.css" rel="stylesheet" />
-        <link href="./assets/css/banner/banner-img.css" rel="stylesheet" />
-        <link href="./assets/css/sobre/sobre.css" rel="stylesheet" />
-        <link href="./assets/css/sobre/sobre-titulo.css" rel="stylesheet" />
-        <link href="./assets/css/sobre/sobre-descripcion.css" rel="stylesheet" />
+        <link href="assets/css/normalize.css" rel="stylesheet" />
+        <link href="assets/css/reset.css" rel="stylesheet" />
+        <link href="assets/css/cabecera.css" rel="stylesheet" />
+        <link href="assets/css/menu/menu-iten.css" rel="stylesheet" />
+        <link href="assets/css/menu/menu-lista.css" rel="stylesheet" />
+        <link href="assets/css/menu/menu-link.css" rel="stylesheet" />
+        <link href="assets/css/banner/banner.css" rel="stylesheet" />
+        <link href="assets/css/banner/banner-titulo.css" rel="stylesheet" />
+        <link href="assets/css/banner/banner-img.css" rel="stylesheet" />
+        <link href="assets/css/sobre/sobre.css" rel="stylesheet" />
+        <link href="assets/css/sobre/sobre-titulo.css" rel="stylesheet" />
+        <link href="assets/css/sobre/sobre-descripcion.css" rel="stylesheet" />
+        <link href="assets/css/recetas.css" rel="stylesheet" />
+        <link href="assets/css/recetas/receta-contenido.css" rel="stylesheet" />
+        <link href="assets/css/recetas/receta-descripcion.css" rel="stylesheet" />
+        <link href="assets/css/recetas/receta-img.css" rel="stylesheet" />
+        <link href="assets/css/recetas/receta-titulo.css" rel="stylesheet" />
+        <link href="assets/css/recetas/receta-boton.css" rel="stylesheet" />
+        <link href="assets/css/quienesSomos/quienesSomos.css" rel="stylesheet" />
+        <link href="assets/css/quienesSomos/qs-titulo.css" rel="stylesheet" />
+        <link href="assets/css/quienesSomos/qs-descripcion.css" rel="stylesheet" />
+        <link href="assets/css/personas.css" rel="stylesheet" />
+        <link href="assets/css/personas/persona-nombre.css" rel="stylesheet" />
+        <link href="assets/css/personas/persona-img.css" rel="stylesheet" />
+        <link href="assets/css/personas/persona-funcion.css" rel="stylesheet" />
     </head>
     <body>
       <!---Inicia header-->
@@ -38,7 +51,7 @@ Bloque, bloque__elemento, bloque(guión guión)elemento bloque__elemento(-)-modi
       <!---Termina header-->
       <!--Inicia Banner--->
       <section class="banner">
-        <img class="banner__imagen" src="assets/img/banner.jpg" alt="banner">
+        <div class="banner__imagen" alt="banner"></div>
         <h2 class="banner__titulo">Reaproveche mejor los alimentos</h2>
       </section>
       <!--Termina Banner--->
@@ -100,8 +113,29 @@ Bloque, bloque__elemento, bloque(guión guión)elemento bloque__elemento(-)-modi
         </div>
       </section>
       <!---Termina recetas-->
-      <!----->
-      <!----->
+      <!--Inicia quienes somos-->
+      <section class="quienes-somos">
+         <h3 class="quienes-somos__titulo">Quien somos</h3>
+         <p class="quienes-somos__descripcion">Conozca la comunidad por detrás de la iniciativa</p>
+         <div class="personas">
+             <div class="persona">
+                 <div class="persona__imagen persona__imagen--roberta"></div>
+                 <span class="persona__nombre">Roberta</span>
+                 <span class="persona__funcion">Contenido</span>
+             </div>
+             <div class="persona">
+                 <div class="persona__imagen persona__imagen--marcela"></div>
+                 <span class="persona__nombre">Marcela</span>
+                 <span class="persona__funcion">Chef de cocina</span>
+             </div>
+             <div class="persona">
+                 <div class="persona__imagen persona__imagen--andrea"></div>
+                 <span class="persona__nombre">Andrea</span>
+                 <span class="persona__funcion">Pequeña Productora</span>
+             </div>
+         </div>
+     </section>
+      <!--Termina Quienes somos--->
       <!----->
       <!----->
     </body>

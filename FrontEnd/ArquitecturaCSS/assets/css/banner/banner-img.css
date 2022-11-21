@@ -1,5 +1,6 @@
 .banner__imagen
 {
+  background: url('../../img/banner.jpg') no-repeat center / cover;
   height: calc(100vh - 72px); /*tamaño del navegador*/
   width: 100%;
 }
