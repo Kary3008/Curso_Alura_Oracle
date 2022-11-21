@@ -1,3 +1,10 @@
+/* PNG -> poco compacto, mantiene la calidad, tam: 29.6KB
+JPG -> muy compacto, la imagen es inferior en calidad, tam: 9,29 KB
+GIF -> calidad baja, uso limitado, tam: 199KB (depende de la calidad)
+SVG -> imagenes vectoriales en dos dimensiones, más leve, tam: 4.26 KB
+       se usa en logotipos, íconos, ilustraciones sencillas.
+*/
+
 .head {
     color: #FFFFFF;
 
