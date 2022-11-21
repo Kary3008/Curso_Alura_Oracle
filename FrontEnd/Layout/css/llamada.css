@@ -6,7 +6,7 @@
     color: #FFFFFF;
     text-align: center;
 
-    background-color: #00161C;
+    background-color: var(--background-llamada-mobile);
 
 /*REM es una unidad relativa a la propiedad font-size de la etiqueta
 , por lo tanto si la etiqueta tiene 16px de font-size 1 REM equivale
@@ -36,6 +36,13 @@ equivale a 16px.*/
 .llamada__boton {
     width: 100%;
 }
+/*@media print --> imprimir en dispositivos que no sean en pantalla*/
+@media screen and (min-width: 768px) {
+    .llamada__texto {
+        max-width: 600px;
+    }
+}
+
 
 @media screen and (min-width: 1024px) {
     .llamada {
