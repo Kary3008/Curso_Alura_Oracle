@@ -1,9 +1,15 @@
+<!-- Mobile First, elemento bajo elemento.
+se concentra en lo esencial, más fácil acceso, máximo rendimiento
+Usa HTML 5 y reduce el código fuente.
+-->
+
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Home | Apeperia</title>
     <!---<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat:wght@300&display=swap" rel="stylesheet"> family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700& -->
+    <meta name="viewport" content="width-device-witdth initial-scale-1.0"> <!--Lo reconoce como si fuera un dispositivo móvil, con escala del 100%-->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/head.css">
     <link rel="stylesheet" href="css/llamada.css">
@@ -15,7 +21,7 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap');
     </style>
-    <header class="head">
+    <header class="head container">
       <img class="head__logo" src="img/logo-apeperia.svg" alt="Logo de Apeperia">
       <nav class="head__navegacion">
         <ul>
@@ -29,11 +35,11 @@
       </nav>
     </header>
     <main>
-      <section class="llamada">
+      <section class="llamada container">
         <h1 class="llamada__titulo">Aplicaciones en la medida</h1>
         <p class="llamada__texto">Apeperia es una empresa emergente con una manera inovadora de
           comprar y crear aplicaciones móviles y web.</p>
-          <a class="llamada__boton" href="#">Conozca los planes</a>
+          <a class="llamada__boton boton" href="#">Conozca los planes</a>
       </section>
       <!--Empieza diferenciales-->
       <section class="diferenciales container">
