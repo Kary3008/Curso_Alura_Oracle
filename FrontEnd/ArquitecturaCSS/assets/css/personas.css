@@ -9,3 +9,29 @@
   padding-top: 3rem;
   justify-content: space-around;
 }
+
+
+@media screen and (min-width: 0)
+{
+  .persona
+  {
+    margin-bottom: 2rem;
+  }
+  .personas
+  {
+    flex-direction: column; /*vertical*/
+  }
+}
+
+
+@media screen and (min-width: 768px)
+{
+  .persona
+  {
+    margin-bottom: 0;
+  }
+  .personas
+  {
+    flex-direction: row; /*horizontal - fila*/
+  }
+}
