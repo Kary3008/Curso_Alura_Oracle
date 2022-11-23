@@ -23,6 +23,16 @@
             ],
             "program": "${workspaceFolder}\\JavaScript\\Parte2\\switch.js",
 
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "for",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\JavaScript\\Parte2\\for.js",
+
         }
     ]
 }
