@@ -1,5 +1,8 @@
+//Inmediately invoked function expression IIFE
+( () => {
+
 const btn = document.querySelector('[data-form-btn]');
-console.log(btn);
+//console.log(btn);
 
 //arrow functions o funciones anónimas
 const createTask = (evento) =>
@@ -13,7 +16,7 @@ const createTask = (evento) =>
     input.value = '';
 
     //backticks
-    console.log(checkComplete());
+    //console.log(checkComplete());
     const taskContent = document.createElement('div');
     //backticks  (template string)
     const titleTask = document.createElement('span');
@@ -28,9 +31,9 @@ const createTask = (evento) =>
     //al elemento lista quiero agregarle un hijo, (nodo hijo dentro del nodo padre)
     list.appendChild(task);
 
-    console.log(value);
+    //console.log(value);
     //console.log(task);
-    console.log(content);
+    //console.log(content);
 };
 
 //listener
@@ -66,3 +69,5 @@ const CompleteTask = (event) =>
     element.classList.remove('far');*/
     //console.log(event.target);
 };
+
+})();
