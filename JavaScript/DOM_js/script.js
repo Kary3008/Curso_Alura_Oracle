@@ -1,3 +1,6 @@
+import checkComplete from "./components/checkComplete.js";
+import deleteIcon from "./components/deleteIcon.js";
+
 //Inmediately invoked function expression IIFE
 ( () => {
 
@@ -24,10 +27,11 @@ const createTask = (evento) =>
     titleTask.innerText = value;
     taskContent.appendChild(checkComplete());
     taskContent.appendChild(titleTask);
-
+    //taskContent.appendChild(deleteIcon()); //mandar a llamar las funciones
     const content = `<i class="fas fa-trash-alt trashIcon icon"></i>`;
         //task.innerHTML = content; //agregar a HTML
     task.appendChild(taskContent);
+    task.appendChild(deleteIcon());
     //al elemento lista quiero agregarle un hijo, (nodo hijo dentro del nodo padre)
     list.appendChild(task);
 
@@ -47,27 +51,5 @@ btn.addEventListener('click', createTask);
     console.log(input.value);
 });*/
 
-const checkComplete = () =>
-{
-    const i = document.createElement('i'); //etiqueta i
-    //i.classList.add("far fa-check-square icon"); //clases de la etiqueta i
-    i.classList.add('far', 'fa-check-square', 'icon');
-    i.addEventListener("click", CompleteTask);
-    return i;
-};
-
-const CompleteTask = (event) =>
-{
-    //cambiar el elemento cuando se completa la tarea
-    const element = event.target;
-    element.classList.toggle('fas');
-    element.classList.toggle('completeIcon');
-    element.classList.toggle('far'); //cambiar dinámicamente la tarea
-    /* 
-    element.classList.add('fas');
-    element.classList.add('completeIcon');
-    element.classList.remove('far');*/
-    //console.log(event.target);
-};
-
 })();
+
