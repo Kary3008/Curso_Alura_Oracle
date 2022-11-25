@@ -1,4 +1,4 @@
-console.log('Validaciones'); //Verificar si está conectado con HTML
+/*console.log('Validaciones'); //Verificar si está conectado con HTML
 
 const inputNac = document.querySelector('#birth');
 
@@ -6,7 +6,19 @@ inputNac.addEventListener('blur', (evento) =>
 {
     validarNac(evento.target);
     //console.log(evento.target);
-});
+});*/
+export function validar(input) 
+{
+    const TipoInput = input.dataset.tipo; //verifica el tipo de input a través de dataset
+    if(validadores[TipoInput])
+    {
+        validadores[TipoInput](input);
+    }
+}
+
+const validadores = { //arma un objeto para cada input -> fecha, nombre, etc.
+    nacimiento: input => validarNac(input),
+};
 
 function validarNac(input)
 {
