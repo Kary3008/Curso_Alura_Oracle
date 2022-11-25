@@ -55,6 +55,26 @@ const mensajesError = {
         valueMissing: "Este campo no puede estar vacío",
         customError: "Debes tener al menos 18 años de edad",
     },
+    numero: 
+    {
+        valueMissing: "El número no puede estar vacío",
+        patternMismatch: "El formato requerido es XXXXXXXXXX, (10 numeros)",
+    },
+    direccion: 
+    {
+        valueMissing: "La dirección no puede estar vacía",
+        patternMismatch: "La dirección debe contener entre 10 a 40 caracteres",
+    },
+    ciudad: 
+    {
+        valueMissing: "La ciudad no puede estar vacía",
+        patternMismatch: "La ciudad debe contener entre 4 a 30 caracteres",
+    },
+    estado: 
+    {
+        valueMissing: "El estado no puede estar vacío",
+        patternMismatch: "El estado debe contener entre 4 a 30 caracteres",
+    },
 };
 
 const validadores = { //arma un objeto para cada input -> fecha, nombre, etc.
