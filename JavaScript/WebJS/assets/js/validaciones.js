@@ -20,27 +20,35 @@ export function validar(input)
     if(input.validity.valid)
     {
         input.parentElement.classList.remove("input-container--invalid");
-        input.parentElement.querySelector(".input-message-error").innerHTML = ''
+        input.parentElement.querySelector(".input-message-error").innerHTML = '';
     }
     else{
         input.parentElement.classList.add("input-container--invalid");
-        input.parentElement.querySelector(".input-message-error").innerHTML = mostrarError(TipoInput, input)
+        input.parentElement.querySelector(".input-message-error").innerHTML = mostrarError(TipoInput, input);
     }
 }
 
+const tipoErrores =  //se crea un arreglo para reconocer los errores.
+[
+    'valueMissing',
+    'typeMismatch',
+    'patternMismatch',    
+    'customError',
+];
+
 const mensajesError = {
     nombre: {
-        valueMissing: "Este campo no puede estar vacío"
+        valueMissing: "El campo nombre no puede estar vacío"
     },
     email: 
     {
-        valueMissing: "Este campo no puede estar vacío",
-        typeMismatch: "El correo no es válido"
+        valueMissing: "El campo email no puede estar vacío",
+        typeMismatch: "El correo no es válido",
     },
     password: 
     {
-        valueMissing: "Este campo no puede estar vacío",
-        patternMismatch: "Al menos 6 caracteres, maximo 12, debe contener una letra mayúscula, una letra minúscula, un número y no puede contener caracteres especiales."
+        valueMissing: "El campo contraseña no puede estar vacío",
+        patternMismatch: "Al menos 6 caracteres, maximo 12, debe contener una letra mayúscula, una letra minúscula, un número y no puede contener caracteres especiales.",
     },
     nacimiento: 
     {
@@ -55,7 +63,16 @@ const validadores = { //arma un objeto para cada input -> fecha, nombre, etc.
 
 function mostrarError(TipoInput, input)
 {
-    let mensaje = ""
+    let mensaje = "";
+    tipoErrores.forEach(error => {
+            if(input.validity[error])
+            {
+                console.log(TipoInput, error);
+                console.log(input.validity[error]);
+                console.log(mensajesError[TipoInput][error]);
+                mensaje = mensajesError[TipoInput][error];
+            }
+        });
 
     return mensaje;
 }
